@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/tabview">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imagsetting"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                app:srcCompat="@drawable/setting_icon" />
+
+
+            <ImageView
+                android:id="@+id/imgprofile"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="50dp"
+                app:srcCompat="@drawable/profile_pic" />
+
+            <TextView
+                android:id="@+id/txtname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgprofile"
+                android:fontFamily="@font/lora_font"
+                android:gravity="center"
+                android:text="John Mcdonald"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtsince"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtname"
+                android:gravity="center"
+                android:text="Members since July 23rd 2016"
+                android:textSize="18dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnshareAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtsince"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="Share Account"
+                android:textAllCaps="false"
+                app:cornerRadius="18dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/btnshareAccount"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                card_view:cardCornerRadius="10dp"
+                app:cardElevation="25dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgShopping"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/shooping_icon" />
+
+                    <TextView
+                        android:id="@+id/txtshopping"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Shopping"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_below="@+id/imgShopping"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view1"
+                android:layout_alignParentRight="true"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/btnshareAccount"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                card_view:cardCornerRadius="10dp"
+                app:cardElevation="25dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgUbers"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/car_icon" />
+
+                    <TextView
+                        android:id="@+id/txtubers"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Ubers"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_below="@+id/imgUbers"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view2"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/card_view"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                card_view:cardCornerRadius="10dp"
+                app:cardElevation="25dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgGroceries"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/shooping_bagg" />
+
+                    <TextView
+                        android:id="@+id/txtGroceries"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Groceries"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_below="@+id/imgGroceries"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view3"
+                android:layout_alignParentRight="true"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/card_view1"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                card_view:cardCornerRadius="10dp"
+                app:cardElevation="25dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgDates"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/yellow_heart" />
+
+                    <TextView
+                        android:id="@+id/txtDates"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Dates"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_below="@+id/imgDates"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view4"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/card_view2"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                card_view:cardCornerRadius="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardElevation="25dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgStats"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/stats_icon" />
+
+                    <TextView
+                        android:id="@+id/txtStats"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Stats"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_below="@+id/imgStats"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view5"
+                android:layout_alignParentRight="true"
+                android:layout_width="160dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/card_view3"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                card_view:cardCornerRadius="10dp"
+                app:cardElevation="25dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgCard"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        app:srcCompat="@drawable/cards_icon" />
+
+                    <TextView
+                        android:id="@+id/txtCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Cards"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_below="@+id/imgCard"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:tabMode="fixed">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/feed2"
+            android:text="Feed" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/analysis_icon"
+            android:text="Anylysis" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/accounts_icon"
+            android:text="Accounts" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/more_icon"
+            android:text="More" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+</RelativeLayout>
